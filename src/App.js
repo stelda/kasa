@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Housing from './components/Housing';
 import Error404 from './components/Error404';
+import './css/style.css';
 
 function App() {
   return (
