@@ -1,0 +1,20 @@
+.app-container {
+  @include layout(column, center, stretch);
+  height: 100%;
+  min-width: 320px;
+
+  header {
+    flex-shrink: 0;
+    margin: 0 5%;
+  }
+
+  .main-container {
+    flex: 1;
+    @include layout(column, center, stretch);
+    margin: 0 5%;
+  }
+
+  footer {
+      flex-shrink: 0;
+  }
+}

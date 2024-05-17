@@ -11,6 +11,8 @@ Typography
 /* reset global settings */
 body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: Montserrat, sans-serif;
 }
 
@@ -37,7 +39,6 @@ header {
   justify-content: space-between;
   align-items: center;
   /* dimensions */
-  margin: 0 5%;
   padding: 45px 0;
   /* media queries for mobile */
 }
@@ -83,6 +84,9 @@ header ul li:hover {
   }
   header ul li {
     text-align: end;
+  }
+  header ul li:nth-child(1) {
+    margin-right: 10px;
   }
 }
 
@@ -161,9 +165,82 @@ footer .footer-logo {
   z-index: 2;
 }
 
-main {
-  border: 3px solid blue;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  min-width: 320px;
+}
+.app-container header {
+  flex-shrink: 0;
   margin: 0 5%;
+}
+.app-container .main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 5%;
+}
+.app-container footer {
+  flex-shrink: 0;
+}
+
+/*
+Colors Variables
+*/
+h1 {
+  color: #FF6060;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.error404 > * {
+  margin: 50px;
+}
+.error404 h1 {
+  font-size: 288px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.error404 p {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060;
+}
+.error404 a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .error404 h1 {
+    font-size: 99px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+  .error404 p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+  .error404 a {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

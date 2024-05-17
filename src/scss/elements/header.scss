@@ -2,7 +2,6 @@ header {
   @include layout(row, space-between, center);
 
   /* dimensions */
-  margin: 0 5%;
   padding: 45px 0;
 
   .desktop-logo {
@@ -54,5 +53,8 @@ header {
       text-align: end;
     }
 
+    ul li:nth-child(1) {
+      margin-right: 10px;
+    }
   }
 }

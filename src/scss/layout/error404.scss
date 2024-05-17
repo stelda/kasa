@@ -1,0 +1,43 @@
+@import '../base/colors';
+
+.error404 {
+  @include layout(column, space-between, center);
+
+  > * {
+    margin: 50px;
+  }
+
+  h1 {
+    @include font(288px, 700);
+
+  }
+
+  p {
+    text-align: center;
+    @include font(36px, 500);
+    color: $coral;
+  }
+
+  a {
+    @include font(18px, 500);
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 768px){
+    .error404 {
+        h1 {
+        @include font(99px, 700);
+        }
+
+        p {
+        @include font(18px, 500);
+        }
+
+        a {
+        @include font(14px, 500);
+        }
+    }
+
+}
