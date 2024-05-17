@@ -1,0 +1,23 @@
+footer {
+  @include layout(column, space-between, center);
+  @include font(24px, 500);
+  background-color: $black;
+  color: $white;
+
+  /* dimensions */
+  width: 100%;
+  padding: 20px 0;
+
+  /* fix the footer at the bottom of the page */
+  position: fixed;
+  bottom: 0;
+
+  /* media queries for mobile */
+  @media (max-width: 768px) {
+    @include font(12px, 500);
+  }
+
+    .footer-logo {
+        margin: 20px;
+    }
+}

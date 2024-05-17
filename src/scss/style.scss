@@ -7,7 +7,14 @@
 @import 'base/reset';
 
 // Import elements files
+@import 'elements/header';
+@import 'elements/footer';
+@import 'elements/main-container';
 
 // Import layout files
 
 // Import pages files
+
+
+// Import debug files
+@import 'layout/debug';

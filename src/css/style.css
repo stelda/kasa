@@ -11,6 +11,7 @@ Typography
 /* reset global settings */
 body {
   margin: 0;
+  font-family: Montserrat, sans-serif;
 }
 
 h1, h2, h3, p {
@@ -28,6 +29,103 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* dimensions */
+  margin: 0 5%;
+  padding: 45px 0;
+  /* media queries for mobile */
+}
+header .desktop-logo {
+  display: block;
+}
+header .mobile-logo {
+  display: none;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+header ul li {
+  display: flex;
+}
+header ul li:nth-child(1) {
+  margin-right: 50px;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  header header {
+    padding: 15px 0;
+  }
+  header .desktop-logo {
+    display: none;
+  }
+  header .mobile-logo {
+    display: block;
+  }
+  header ul {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  header ul li {
+    text-align: end;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  /* dimensions */
+  width: 100%;
+  padding: 20px 0;
+  /* fix the footer at the bottom of the page */
+  position: fixed;
+  bottom: 0;
+  /* media queries for mobile */
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+footer .footer-logo {
+  margin: 20px;
+}
+
+header {
+  border: 3px solid purple;
+}
+
+main {
+  border: 3px solid blue;
+  margin: 0 5%;
+}
+
+footer {
+  border: 3px solid green;
 }
 
 /*# sourceMappingURL=style.css.map */

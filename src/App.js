@@ -1,23 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Housing from './components/Housing';
-import Error404 from './components/Error404';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AppRouter from './AppRouter';
 import './css/style.css';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/housing/:id" element={< Housing />} />
-          <Route path="*" element={<Error404 />} />
-      </Routes>
-
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="app-container">
+                <Header/>
+                <main className="main-container">
+                    <AppRouter/>
+                </main>
+                <Footer/>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

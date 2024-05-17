@@ -6,8 +6,10 @@ function Housing() {
 
     return (
         <div>
-            <h1>Housing Details</h1>
-            <p>Details for Housing ID: {id}</p>
+            <div>
+                <h1>Housing Details</h1>
+                <p>Details for Housing ID: {id}</p>
+            </div>
         </div>
     );
 }
