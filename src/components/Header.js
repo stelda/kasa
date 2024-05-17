@@ -3,8 +3,8 @@ import React from 'react';
 function Header() {
     return (
         <header>
-            <img src="/assets/logo_d.png" alt="Logo" className="desktop-logo"/>
-            <img src="/assets/logo_m.png" alt="Logo" className="mobile-logo"/>
+            <img src="/logo_d.png" alt="Logo" className="desktop-logo"/>
+            <img src="/logo_m.png" alt="Logo" className="mobile-logo"/>
 
             <nav>
                 <ul>

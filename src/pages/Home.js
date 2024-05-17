@@ -1,13 +1,18 @@
 import React from 'react';
+import Banner from "../components/Banner";
+import homeBannerImage from "../assets/home_banner.jpg";
 
 function Home() {
     return (
         <div>
-            <div>
-                <h1>Home Page</h1>
-                <p>Welcome to our website!</p>
-            </div>
+            <Banner
+                title="Chez vous, partout et ailleurs"
+                backgroundImage={homeBannerImage}
+                className="home-banner"
+            />
+            <h2>Home</h2>
         </div>
+
     );
 }
 

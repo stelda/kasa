@@ -115,17 +115,55 @@ footer .footer-logo {
   margin: 20px;
 }
 
-header {
-  border: 3px solid purple;
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* dimensions */
+  width: 100%;
+  min-height: 223px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  /* background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.home-banner::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-banner::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
 }
 
 main {
   border: 3px solid blue;
   margin: 0 5%;
-}
-
-footer {
-  border: 3px solid green;
 }
 
 /*# sourceMappingURL=style.css.map */

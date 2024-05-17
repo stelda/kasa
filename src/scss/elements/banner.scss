@@ -1,0 +1,40 @@
+.banner {
+    @include layout(column, center, center);
+    position: relative;
+    /* dimensions */
+    width: 100%;
+    min-height: 223px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    /* background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.home-banner::after {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about-banner::after {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+    @include font(48px, 700);
+    color: $white;
+    position: relative;
+    z-index: 2;
+}
