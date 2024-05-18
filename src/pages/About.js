@@ -4,19 +4,18 @@ import aboutBannerImage from "../assets/about_banner.jpg";
 
 function About() {
     return (
-        <div>
+        <main className='main-container'>
             <Banner
                 title=""
                 backgroundImage={aboutBannerImage}
                 className="about-banner"
             />
 
-
-            <div>
+            <div className='about-content'>
                 <h1>About Us</h1>
                 <p>Learn more about our company.</p>
             </div>
-        </div>
+        </main>
     );
 }
 

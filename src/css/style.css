@@ -165,6 +165,42 @@ footer .footer-logo {
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    min-height: 150px;
+  }
+  .banner h1 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+.gallery {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid red;
+}
+.gallery .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  width: 340px;
+  height: 340px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 5px solid red;
+  color: white;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -184,6 +220,7 @@ footer .footer-logo {
   justify-content: center;
   align-items: stretch;
   margin: 0 5%;
+  gap: 20px;
 }
 .app-container footer {
   flex-shrink: 0;

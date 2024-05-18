@@ -38,3 +38,13 @@
     position: relative;
     z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        min-height: 150px;
+    }
+
+    .banner h1 {
+        @include font(16px, 700);
+    }
+}
