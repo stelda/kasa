@@ -1,20 +1,4 @@
-//.app-container {
-//  //@include layout(column, flex-start, stretch);
-//  //height: 100%;
-//  //min-width: 320px;
-//  //max-width: 1440px;
-//  width: 1440px;
-//}
-//
-//@media screen and (max-width: 1024px) {
-//  .app-container {
-//    width: 1024px;
-//  }
-//}
-//
-//@media screen and (max-width: 768px) {
-//  .app-container {
-//    width: 768px;
-//  }
-//}
-//
+.app-container {
+  width: 100vh;
+  height: 100vh;
+}

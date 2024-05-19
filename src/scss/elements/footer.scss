@@ -1,7 +1,6 @@
 footer {
   @include layout(column, space-between, center);
   @include font(24px, 500);
-  //flex-shrink: 0;
   background-color: $black;
   color: $white;
 
@@ -13,9 +12,11 @@ footer {
   .footer-logo {
     margin: 20px;
   }
+}
 
-  /* media queries for mobile */
-  @media (max-width: 768px) {
-    @include font(12px, 500);
+/* media queries for mobile */
+@media (max-width: 768px) {
+  footer {
+    @include font(18px, 500);
   }
 }

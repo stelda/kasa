@@ -1,6 +1,5 @@
 header {
   @include layout(row, space-between, center);
-  //flex-shrink: 0;
   padding: 20px 20px;
 
   /* logo */
@@ -18,9 +17,6 @@ header {
     @include font(24px, 500);
   }
 
-  //ul li {
-  //  display: flex;
-  //}
 
   ul li:nth-child(1) {
     margin-right: 50px;
@@ -47,10 +43,6 @@ header {
       @include font(12px, 500);
       text-transform: uppercase;
     }
-
-    //ul li {
-    //  text-align: end;
-    //}
 
     ul li:nth-child(1) {
       margin-right: 10px;

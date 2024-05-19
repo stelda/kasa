@@ -1,5 +1,5 @@
 .about-content {
-  @include layout(column, flex-start, flex-start);
+  width: 100vh;
   padding:  0 50px;
   gap: 10px;
 }
