@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../components/Banner";
 import homeBannerImage from "../assets/home_banner.jpg";
-import items from "../data/housing.js";
+
 import Gallery from "../components/Gallery";
 
 function Home() {

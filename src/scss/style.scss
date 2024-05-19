@@ -11,12 +11,17 @@
 @import 'elements/footer';
 @import 'elements/banner';
 @import 'elements/gallery';
+@import 'elements/card';
+@import 'elements/dropdown';
 
 // Import layout files
 @import 'layout/app-container';
-@import 'pages/error404';
-// Import pages files
+@import 'layout/main-container';
 
+
+// Import pages files
+@import 'pages/error404';
+@import 'pages/housing';
 
 // Import debug files
 @import 'layout/debug';

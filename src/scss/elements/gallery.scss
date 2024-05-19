@@ -1,24 +1,37 @@
 .gallery {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+
+  /* dimensions */
   gap: 20px;
   padding: 20px;
 
-  border: 1px solid red;
+  background-color: $grey;
+  border-radius: 25px;
+
+}
 
 
-  .card {
-    @include layout(column, center, flex-end);
-    @include font(18px, 700);
-    width: 340px;
-    height: 340px;
-    padding: 10px;
 
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    border: 5px solid red;
-    color: white;
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+    /* deux colonnes seulement */
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    //margin: 50px;
   }
+
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    /* une colonne seulement */
+    grid-template-columns: 1fr;
+    gap: 50px;
+    //margin: 50px;
+  }
+
 }
