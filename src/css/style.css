@@ -240,20 +240,24 @@ footer .footer-logo {
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #ff6060;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .dropdown-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -266,7 +270,10 @@ footer .footer-logo {
 }
 
 .dropdown-content {
-  background-color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F6F6F6;
   padding: 20px;
 }
 
@@ -456,8 +463,9 @@ h1 {
 }
 
 .star {
-  font-size: 36px;
+  font-size: 24px;
   color: #E3E3E3;
+  padding: 25px 5px;
 }
 
 .star.filled {

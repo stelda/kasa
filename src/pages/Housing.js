@@ -24,9 +24,13 @@ function Housing() {
     return (
         <div className="housing-container">
             <div className="carrousel">
-                <button className="prev-arrow" onClick={prevImage}>&#10094;</button>
+                <button className="prev-arrow" onClick={prevImage}>
+                    <i className="fa-solid fa-chevron-left"></i>
+                </button>
                 <img src={item.pictures[currentIndex]} alt={item.title} className="carrousel-image" />
-                <button className="next-arrow" onClick={nextImage}>&#10095;</button>
+                <button className="next-arrow" onClick={nextImage}>
+                    <i className="fa-solid fa-chevron-right"></i>
+                </button>
                 <div className="image-number">{currentIndex + 1}/{item.pictures.length}</div>
             </div>
             <div className="housing-details">
@@ -50,7 +54,7 @@ function Housing() {
                             <div className="rating">
                                 {[...Array(5)].map((_, index) => (
                                     <span key={index}
-                                          className={`star ${index < item.rating ? 'filled' : ''}`}>&#9733;</span>
+                                          className={`fa-solid fa-star star ${index < item.rating ? 'filled' : ''}`}></span>
                                 ))}
                             </div>
                         </div>
