@@ -342,6 +342,7 @@ h1 {
   margin: 20px;
 }
 
+/* ============= Carrousel ============= */
 .carrousel {
   position: relative;
   width: 100%;
@@ -384,6 +385,7 @@ h1 {
   color: white;
 }
 
+/* ============= Housing Details ============= */
 .housing-details {
   width: 100%;
   margin-top: 20px;
@@ -425,6 +427,7 @@ h1 {
   border-radius: 25px;
 }
 
+/* Host and rating */
 .housing-host {
   display: flex;
   flex-direction: column;
@@ -439,6 +442,7 @@ h1 {
   justify-content: flex-end;
   align-items: flex-start;
   gap: 10px;
+  padding-left: 15px;
 }
 
 .host-name {
@@ -472,6 +476,7 @@ h1 {
   color: #FF6060;
 }
 
+/* ============= Description and Equipments ============= */
 .description-equipments {
   display: flex;
   justify-content: space-between;
@@ -497,6 +502,63 @@ h1 {
   padding: 5px 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 50px;
+  gap: 10px;
+}
+
+html {
+  border: 3px solid orange;
+}
+
+body {
+  border: 3px solid red;
+}
+
+.app-container {
+  border: 3px solid yellow;
+}
+
+.main-container {
+  border: 3px solid pink;
+}
+
+header {
+  border: 3px solid purple;
+}
+
+main {
+  border: 3px solid blue;
+}
+
+footer {
+  border: 3px solid green;
+}
+
+.about-content {
+  border: 3px solid deeppink;
+}
+
+.error404 {
+  border: 3px solid brown;
+}
+
+.gallery {
+  border: 3px solid grey;
+}
+
+.card-link {
+  border: 3px solid black;
+}
+
+.card {
+  border: 3px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
