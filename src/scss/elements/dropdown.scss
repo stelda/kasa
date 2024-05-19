@@ -1,0 +1,34 @@
+.dropdown {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6060;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-header h3 {
+  margin: 0;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
