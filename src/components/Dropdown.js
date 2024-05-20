@@ -1,10 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function Dropdown({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen);
+        if (isAnimating) return;
+
+        setIsAnimating(true);
+        setTimeout(() => {
+            setIsOpen(!isOpen);
+            setIsAnimating(false);
+        }, 300); // Duration of the animation
     };
 
     return (
@@ -15,19 +22,17 @@ function Dropdown({ title, content }) {
                     <i className="fa-solid fa-chevron-down"></i>
                 </span>
             </div>
-            {isOpen && (
-                <div className="dropdown-content">
-                    {Array.isArray(content) ? (
-                        <ul>
-                            {content.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <p>{content}</p>
-                    )}
-                </div>
-            )}
+            <div className={`dropdown-content ${isOpen ? 'opening' : 'closing'}`}>
+                {Array.isArray(content) ? (
+                    <ul>
+                        {content.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>{content}</p>
+                )}
+            </div>
         </div>
     );
 }
