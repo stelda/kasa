@@ -32,6 +32,7 @@
   to {
     opacity: 0;
     transform: translateY(-10px);
+    padding: 0;
   }
 }
 /*
@@ -290,6 +291,8 @@ footer .footer-logo {
   position: relative;
   z-index: 2;
   cursor: pointer;
+  /* from chevron down to chevron up */
+  /* from chevron up to chevron down */
 }
 .dropdown-header h3 {
   font-size: 24px;
@@ -297,14 +300,11 @@ footer .footer-logo {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-.dropdown-header .dropdown-arrow {
-  transition: transform 0.3s;
+.dropdown-header .dropdown-arrow:not(.open) {
+  animation: arrowRotateClosing 0.3s forwards;
 }
 .dropdown-header .dropdown-arrow.open {
   animation: arrowRotateOpening 0.3s forwards;
-}
-.dropdown-header .dropdown-arrow:not(.open) {
-  animation: arrowRotateClosing 0.3s forwards;
 }
 
 .dropdown-content {
@@ -314,7 +314,6 @@ footer .footer-logo {
   background-color: #F6F6F6;
   height: 100%;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
   position: relative;
   z-index: 1;
 }
@@ -329,6 +328,11 @@ footer .footer-logo {
   animation: hideDropdownContent 0.3s forwards;
   max-height: 0;
   padding: 20px;
+}
+
+.dropdown-content.closed {
+  max-height: 0;
+  padding: 0;
 }
 
 /* ============= Carrousel ============= */

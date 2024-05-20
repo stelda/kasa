@@ -13,6 +13,7 @@ function AppRouter() {
                <Route path="/about" element={<About />} />
                <Route path="/housing/:id" element={< Housing />} />
                <Route path="*" element={<Error404 />} />
+               <Route path="/404" element={<Error404 />} />
            </Routes>
     );
 }

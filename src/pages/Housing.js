@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import items from "../data/housing.js";
 import Dropdown from "../components/Dropdown";
 import Carrousel from "../components/Carrousel";
@@ -9,7 +9,7 @@ function Housing() {
     const item = items.find(item => item.id === id);
 
     if (!item) {
-        return <p>Élément non trouvé</p>;
+        return <Navigate to="/404" />;
     }
 
     return (

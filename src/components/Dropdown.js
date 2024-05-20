@@ -11,7 +11,7 @@ function Dropdown({ title, content }) {
         setTimeout(() => {
             setIsOpen(!isOpen);
             setIsAnimating(false);
-        }, 300); // Duration of the animation
+        }, 300);
     };
 
     return (
