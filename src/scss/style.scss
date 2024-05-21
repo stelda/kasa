@@ -17,14 +17,14 @@
 @import 'elements/carrousel';
 
 // Import layout files
-@import 'layout/main-container';
-@import 'layout/app-container';
+@import 'layout/mainContainer';
+@import 'layout/appContainer';
 
 
 // Import pages files
 @import 'pages/error404';
 @import 'pages/housing';
-@import 'pages/about_content';
+@import 'pages/aboutContent';
 
 // Import debug files
 @import 'layout/debug';

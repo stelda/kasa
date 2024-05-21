@@ -1,0 +1,21 @@
+.app-container {
+  width: 1440px;
+}
+
+@media screen and (max-width: 1024px) {
+  .app-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .app-container {
+    width: 100%;
+  }
+}
