@@ -11,16 +11,26 @@ function Carrousel({ item }) {
     const prevImage = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + item.pictures.length) % item.pictures.length);
     };
+
+    const isSingleImage = item.pictures.length === 1;
+
     return (
         <div className="carrousel">
-            <button className="prev-arrow" onClick={prevImage}>
-                <i className="fa-solid fa-chevron-left"></i>
-            </button>
+            {!isSingleImage && (
+                <>
+                    <button className="prev-arrow" onClick={prevImage}>
+                        <i className="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button className="next-arrow" onClick={nextImage}>
+                        <i className="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <div className="image-number">{currentIndex + 1}/{item.pictures.length}</div>
+                </>
+            )}
+
             <img src={item.pictures[currentIndex]} alt={item.title} className="carrousel-image"/>
-            <button className="next-arrow" onClick={nextImage}>
-                <i className="fa-solid fa-chevron-right"></i>
-            </button>
-            <div className="image-number">{currentIndex + 1}/{item.pictures.length}</div>
         </div>
     );
 }
