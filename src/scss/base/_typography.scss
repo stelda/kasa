@@ -1,3 +1,158 @@
 /*
 Typography
 */
+
+/* ======================================= Header ============================== */
+
+header ul {
+  @include font(24px, 500);
+}
+
+@media (max-width: 768px) {
+  header ul {
+    @include font(12px, 500);
+  }
+}
+
+/* ======================================= Banner ============================== */
+
+.banner h1 {
+  @include font(48px, 700);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    @include font(36px, 700);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    @include font(16px, 700);
+  }
+}
+
+/* ======================================= Card ============================== */
+
+.card {
+  @include font(18px, 700);
+}
+
+/* ======================================= Housing ============================== */
+.housing-header {
+  h1 {
+    @include font(36px, 500);
+  }
+
+  p {
+    @include font(18px, 500);
+  }
+
+  .tag {
+    @include font(14px, 700);
+  }
+
+  .host-name {
+    @include font(18px, 500);
+  }
+
+  @media screen and (max-width: 768px) {
+    .housing-header {
+      h1 {
+        @include font(18px, 500);
+      }
+
+      p {
+        @include font(14px, 500);
+      }
+
+      .tag {
+        @include font(10px, 700);
+      }
+
+      .host-name {
+        @include font(12px, 500);
+      }
+    }
+  }
+}
+
+.description-equipments .dropdown-header h3 {
+  @include font(18px, 700);
+}
+
+.description-equipments .dropdown-content {
+  @include font(18px, 400);
+}
+
+@media screen and (max-width: 768px) {
+  .description-equipments .dropdown-header h3 {
+    @include font(13px, 700);
+  }
+
+  .description-equipments  .dropdown-content {
+    @include font(13px, 400);
+  }
+}
+
+/* ======================================= About ============================== */
+
+.about-content .dropdown-header h3 {
+    @include font(24px, 700);
+}
+
+.about-content .dropdown-content {
+  @include font(24px, 400);
+}
+
+@media screen and (max-width: 768px) {
+  .about-content .dropdown-header h3 {
+    @include font(13px, 700);
+  }
+
+  .about-content .dropdown-content {
+    @include font(13px, 400);
+  }
+}
+
+/* ======================================= Error 404 ============================== */
+
+.error404 h1 {
+  @include font(288px, 700);
+}
+
+.error404 p {
+  @include font(36px, 500);
+}
+
+.error404 a {
+  @include font(18px, 500);
+}
+
+@media screen and (max-width: 768px){
+  .error404 {
+    h1 {
+      @include font(96px, 700);
+    }
+
+    p {
+      @include font(18px, 500);
+    }
+
+    a {
+      @include font(14px, 500);
+    }
+  }
+}
+
+/* ======================================= Footer ============================== */
+
+footer {
+  @include font(24px, 500);
+}
+
+@media (max-width: 768px) {
+    footer {
+      @include font(12px, 500);
+    }
+}

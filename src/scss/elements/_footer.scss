@@ -1,6 +1,5 @@
 footer {
   @include layout(column, space-between, center);
-  @include font(24px, 500);
   background-color: $black;
   color: $white;
 
@@ -11,12 +10,5 @@ footer {
 
   .footer-logo {
     margin: 20px;
-  }
-}
-
-/* media queries for mobile */
-@media (max-width: 768px) {
-  footer {
-    @include font(18px, 500);
   }
 }

@@ -7,7 +7,6 @@
 
 .card {
   @include layout(column, flex-end, flex-start);
-  @include font(18px, 700);
   color: white;
 
   /* dimensions */

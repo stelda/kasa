@@ -7,37 +7,15 @@
     margin: 50px;
   }
 
-  h1 {
-    @include font(288px, 700);
-  }
-
   p {
-    @include font(36px, 500);
     text-align: center;
     color: $coral;
   }
 
   a {
-    @include font(18px, 500);
     text-align: center;
     text-decoration: underline;
     color: $black;
   }
 }
 
-@media screen and (max-width: 768px){
-    .error404 {
-        h1 {
-        @include font(99px, 700);
-        }
-
-        p {
-        @include font(18px, 500);
-        }
-
-        a {
-        @include font(14px, 500);
-        }
-    }
-
-}

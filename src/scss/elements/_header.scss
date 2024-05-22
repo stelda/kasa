@@ -14,9 +14,7 @@ header {
   /* navigation */
   ul {
     @include layout(row, space-between, flex-end);
-    @include font(24px, 500);
   }
-
 
   ul li:nth-child(1) {
     margin-right: 50px;
@@ -40,7 +38,6 @@ header {
 
     /* navigation */
     ul {
-      @include font(12px, 500);
       text-transform: uppercase;
     }
 

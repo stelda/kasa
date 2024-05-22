@@ -14,12 +14,7 @@
   @include layout(row, space-between, flex-start);
 
   h1 {
-    @include font(36px, 500);
     margin-bottom: 10px;
-  }
-
-  p {
-      @include font(18px, 500);
   }
 
   .tags {
@@ -30,12 +25,11 @@
 
   .tag {
     @include layout(row, center, center);
-    @include font(14px, 500);
     color: white;
     background-color: #ff6060;
-
     padding: 10px 40px;
     border-radius: 25px;
+    text-align: center;
   }
 }
 
@@ -53,7 +47,6 @@
 }
 
 .host-name {
-  @include font(18px, 500);
   color: $coral;
   white-space: normal;
   word-wrap: break-word;
@@ -87,16 +80,8 @@
 .description-equipments {
   display: flex;
   justify-content: space-between;
+
   gap: 20px;
-}
-
-.description, .equipments {
-  flex: 1;
-}
-
-.description h2, .equipments h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
 }
 
 .equipments ul {
