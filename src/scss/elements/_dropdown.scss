@@ -43,7 +43,7 @@
 }
 
 .dropdown-content.opening {
-  animation: showDropdownContent 0.3s forwards;
+  animation: showDropdownContent 0.3s ease-in;
   max-height: 500px;
   padding: 20px;
 }
