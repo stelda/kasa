@@ -8,8 +8,8 @@ header ul {
   @include font(24px, 500);
 }
 
-@media (max-width: 768px) {
-  header ul {
+@media screen and (max-width: 768px) {
+  header ul  {
     @include font(12px, 500);
   }
 }

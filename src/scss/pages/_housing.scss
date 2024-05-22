@@ -1,5 +1,8 @@
+@import '../abstract/mixins';
+@import '../base/colors';
+
 .housing-details {
-  @include layout (column , flex-start, space-between);
+  @include layout (column , flex-start, stretch);
   margin: 20px;
   width: 100%;
 }

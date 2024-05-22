@@ -1,8 +1,3 @@
 .main-container {
-
-@include layout(column, space-evenly, center);
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
-  margin: 20px;
+  @include layout(column, space-evenly, center);
 }

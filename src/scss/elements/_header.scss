@@ -1,6 +1,6 @@
 header {
   @include layout(row, space-between, center);
-  padding: 20px 20px;
+  padding: 20px 0;
 
   /* logo */
   .desktop-logo {
@@ -8,7 +8,7 @@ header {
   }
 
   .mobile-logo {
-      display: none;
+    display: none;
   }
 
   /* navigation */
@@ -25,22 +25,18 @@ header {
   }
 
   /* media queries for mobile */
-  @media (max-width: 768px) {
-
+  @media screen and (max-width: 768px) {
     /* logo */
     .desktop-logo {
-        display: none;
+      display: none;
     }
-
     .mobile-logo {
-        display: block;
+      display: block;
     }
-
     /* navigation */
     ul {
       text-transform: uppercase;
     }
-
     ul li:nth-child(1) {
       margin-right: 10px;
     }

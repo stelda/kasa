@@ -1,21 +1,23 @@
 .app-container {
-  width: 1440px;
+  @include layout(column, flex-start, stretch);
+  max-width: 1440px;
+
+  header, .main-container{
+    margin: 0 45px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1439px) {
   .app-container {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .app-container {
-    width: 100%;
+  header, .main-container{
+    margin: 0 20px;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .app-container {
-    width: 100%;
-  }
-}
+
+
