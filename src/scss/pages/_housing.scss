@@ -1,13 +1,7 @@
-.housing-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-
 .housing-details {
+  @include layout (column , flex-start, space-between);
+  margin: 20px;
   width: 100%;
-  margin-top: 20px;
 }
 
 .housing-header {
@@ -33,24 +27,43 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .housing-header {
+    @include layout(column, flex-start, flex-start);
+    gap: 0;
+  }
+}
+
 /* Host and rating */
 
+.housing-host-container {
+  width: 100%;
+}
+
 .housing-host {
-  @include layout(column, flex-start, flex-end);
+  @include layout(column, space-between, flex-end);
   margin-bottom: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .housing-host {
+    @include layout(row-reverse, space-between, center);
+  }
 }
 
 .host-info {
   @include layout(row, flex-end, flex-start);
   gap: 10px;
   padding-left: 15px;
+  width: 167px;
 }
 
 .host-name {
   color: $coral;
   white-space: normal;
   word-wrap: break-word;
-  text-align: end;
+  //text-align: end;
 }
 
 .host-picture {
@@ -99,5 +112,7 @@
 @media screen and (max-width: 768px) {
   .description-equipments {
     flex-direction: column;
+
+    gap: 0;
   }
 }

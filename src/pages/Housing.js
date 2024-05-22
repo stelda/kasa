@@ -27,7 +27,7 @@ function Housing() {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="housing-host-container">
                         <div className="housing-host">
                             <div className="host-info">
                                 <span className="host-name">{item.host.name}</span>
