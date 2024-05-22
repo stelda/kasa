@@ -51,11 +51,8 @@
 .dropdown-content.closing {
   animation: hideDropdownContent 0.3s forwards;
   max-height: 0;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-.dropdown-content.closed {
-  max-height: 0;
-  padding: 0;
-}
+
 
