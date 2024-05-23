@@ -12,6 +12,10 @@
   height: 415px;
   border-radius: 10px;
   object-fit: cover;
+
+    @media screen and (max-width: 768px) {
+      height: 255px;
+    }
 }
 
 .prev-arrow, .next-arrow {
@@ -24,6 +28,10 @@
   padding: 25px;
   cursor: pointer;
   font-size: 80px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .prev-arrow {
@@ -41,3 +49,5 @@
   background: transparent;
   color: white;
 }
+
+

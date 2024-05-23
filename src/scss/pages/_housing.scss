@@ -34,6 +34,10 @@
   .housing-header {
     @include layout(column, flex-start, flex-start);
     gap: 0;
+
+    .tag {
+      padding: 5px 20px;
+    }
   }
 }
 
@@ -60,6 +64,11 @@
   gap: 10px;
   padding-left: 15px;
   width: 167px;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    padding: 0;
+  }
 }
 
 .host-name {
@@ -73,6 +82,11 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .rating {
@@ -84,6 +98,11 @@
   font-size: 24px;
   color: $light-grey;
   padding: 25px 5px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    padding: 0;
+  }
 }
 
 .star.filled {

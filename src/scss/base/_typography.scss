@@ -55,27 +55,28 @@ header ul {
   .host-name {
     @include font(18px, 500);
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .housing-header {
-      h1 {
-        @include font(18px, 500);
-      }
+@media screen and (max-width: 768px) {
+  .housing-header {
+    h1 {
+      @include font(18px, 500);
+    }
 
-      p {
-        @include font(14px, 500);
-      }
+    p {
+      @include font(14px, 500);
+    }
 
-      .tag {
-        @include font(10px, 700);
-      }
+    .tag {
+      @include font(10px, 700);
+    }
 
-      .host-name {
-        @include font(12px, 500);
-      }
+    .host-name {
+      @include font(12px, 500);
     }
   }
 }
+
 
 .description-equipments .dropdown-header h3 {
   @include font(18px, 700);

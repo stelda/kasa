@@ -109,29 +109,29 @@ header ul {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+
 @media screen and (max-width: 768px) {
-  .housing-header .housing-header h1 {
+  .housing-header h1 {
     font-size: 18px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
   }
-  .housing-header .housing-header p {
+  .housing-header p {
     font-size: 14px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
   }
-  .housing-header .housing-header .tag {
+  .housing-header .tag {
     font-size: 10px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
   }
-  .housing-header .housing-header .host-name {
+  .housing-header .host-name {
     font-size: 12px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
   }
 }
-
 .description-equipments .dropdown-header h3 {
   font-size: 18px;
   font-weight: 700;
@@ -496,6 +496,11 @@ footer .footer-logo {
   border-radius: 10px;
   object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .carrousel-image {
+    height: 255px;
+  }
+}
 
 .prev-arrow, .next-arrow {
   position: absolute;
@@ -507,6 +512,11 @@ footer .footer-logo {
   padding: 25px;
   cursor: pointer;
   font-size: 80px;
+}
+@media screen and (max-width: 768px) {
+  .prev-arrow, .next-arrow {
+    font-size: 30px;
+  }
 }
 
 .prev-arrow {
@@ -629,6 +639,9 @@ h1 {
     align-items: flex-start;
     gap: 0;
   }
+  .housing-header .tag {
+    padding: 5px 20px;
+  }
 }
 /* Host and rating */
 .housing-host-container {
@@ -660,6 +673,12 @@ h1 {
   padding-left: 15px;
   width: 167px;
 }
+@media screen and (max-width: 768px) {
+  .host-info {
+    width: 100px;
+    padding: 0;
+  }
+}
 
 .host-name {
   color: #FF6060;
@@ -672,6 +691,12 @@ h1 {
   height: 64px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .host-picture {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .rating {
   display: flex;
@@ -682,6 +707,12 @@ h1 {
   font-size: 24px;
   color: #E3E3E3;
   padding: 25px 5px;
+}
+@media screen and (max-width: 768px) {
+  .star {
+    font-size: 13px;
+    padding: 0;
+  }
 }
 
 .star.filled {
