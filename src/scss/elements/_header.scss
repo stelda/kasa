@@ -1,3 +1,5 @@
+@import '../abstract/mixins';
+
 header {
   @include layout(row, space-between, center);
   padding: 20px 0;
@@ -14,31 +16,37 @@ header {
   /* navigation */
   ul {
     @include layout(row, space-between, flex-end);
-  }
-
-  ul li:nth-child(1) {
-    margin-right: 50px;
+    gap: 50px;
   }
 
   ul li:hover {
     text-decoration: underline;
   }
+}
 
-  /* media queries for mobile */
-  @media screen and (max-width: 768px) {
-    /* logo */
-    .desktop-logo {
-      display: none;
-    }
-    .mobile-logo {
-      display: block;
-    }
-    /* navigation */
+/* media queries for mobile */
+@media screen and (max-width: 768px) {
+  /* logo */
+  header .desktop-logo {
+    display: none;
+  }
+  header .mobile-logo {
+    display: block;
+  }
+  /* navigation */
+  header ul {
+    text-transform: uppercase;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    @include layout(column, center, center);
+
     ul {
-      text-transform: uppercase;
-    }
-    ul li:nth-child(1) {
-      margin-right: 10px;
+      gap: 10px;
+      margin-left: 10px;
     }
   }
 }

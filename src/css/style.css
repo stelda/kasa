@@ -268,7 +268,6 @@ header {
   padding: 20px 0;
   /* logo */
   /* navigation */
-  /* media queries for mobile */
 }
 header .desktop-logo {
   display: block;
@@ -281,32 +280,39 @@ header ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-}
-header ul li:nth-child(1) {
-  margin-right: 50px;
+  gap: 50px;
 }
 header ul li:hover {
   text-decoration: underline;
 }
+
+/* media queries for mobile */
 @media screen and (max-width: 768px) {
-  header {
-    /* logo */
-    /* navigation */
-  }
+  /* logo */
   header .desktop-logo {
     display: none;
   }
   header .mobile-logo {
     display: block;
   }
+  /* navigation */
   header ul {
     text-transform: uppercase;
-  }
-  header ul li:nth-child(1) {
-    margin-right: 10px;
+    gap: 20px;
   }
 }
-
+@media screen and (max-width: 350px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul {
+    gap: 10px;
+    margin-left: 10px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -522,9 +528,19 @@ footer .footer-logo {
 .prev-arrow {
   left: 10px;
 }
+@media screen and (max-width: 768px) {
+  .prev-arrow {
+    left: 5px;
+  }
+}
 
 .next-arrow {
   right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .next-arrow {
+    right: 5px;
+  }
 }
 
 .image-number {
@@ -553,14 +569,19 @@ footer .footer-logo {
   margin: 0 45px;
 }
 
-@media screen and (max-width: 1439px) {
-  .app-container {
-    width: 100%;
+@media screen and (max-width: 1024px) {
+  .app-container header, .app-container .main-container {
+    margin: 0 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  header, .main-container {
-    margin: 0 20px;
+  .app-container header, .app-container .main-container {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-container header, .app-container .main-container {
+    margin: 0 5px;
   }
 }
 /*
