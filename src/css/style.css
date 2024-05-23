@@ -774,52 +774,5 @@ h1 {
     padding: 0;
   }
 }
-html {
-  border: 3px solid orange;
-}
-
-body {
-  border: 3px solid red;
-}
-
-.app-container {
-  border: 3px solid yellow;
-}
-
-.main-container {
-  border: 3px solid pink;
-}
-
-header {
-  border: 3px solid purple;
-}
-
-main {
-  border: 3px solid blue;
-}
-
-footer {
-  border: 3px solid green;
-}
-
-.about-content {
-  border: 3px solid deeppink;
-}
-
-.error404 {
-  border: 3px solid brown;
-}
-
-.gallery {
-  border: 3px solid grey;
-}
-
-.card-link {
-  border: 3px solid black;
-}
-
-.card {
-  border: 3px solid white;
-}
 
 /*# sourceMappingURL=style.css.map */
