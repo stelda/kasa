@@ -550,6 +550,11 @@ footer .footer-logo {
   background: transparent;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .image-number {
+    display: none;
+  }
+}
 
 .main-container {
   display: flex;
